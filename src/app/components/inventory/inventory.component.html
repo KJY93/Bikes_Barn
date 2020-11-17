@@ -1,0 +1,25 @@
+<div>
+    <h3>Products</h3>
+    <table>
+        <tr>
+            <th>Products List</th>
+        </tr>
+
+        <tr *ngFor="let p of products;">
+            <td>
+                <strong>{{p.name}}</strong>
+                <div>
+                    <div>
+                        <img src={{p.imgUrl}} />
+                    </div>
+                    <div class="actionButton">
+                        <!-- onclick, this will trigger the addItemToCart function in the inventory component, passing in product name and product image url as arguments -->
+                        <button (click)="addItemToCart(p.name, p.imgUrl)">Add</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+</div>
+

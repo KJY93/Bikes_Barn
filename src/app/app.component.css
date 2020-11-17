@@ -1,0 +1,16 @@
+.inventory {
+    display: flex;
+    justify-content: center;
+}
+
+.shoppingCart, .inventoryTable {
+    width: 45%;
+}
+
+.inventoryTable {
+    margin-right: 10px;
+}
+
+.shopName {
+    text-align: center;
+}

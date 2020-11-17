@@ -1,27 +1,29 @@
-# AngularShoppingCart
+### Bikes Barn
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+## Introduction
 
-## Development server
+This is my attempt of building a simple shopping cart using Angular.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Folder Description
 
-## Code scaffolding
+The main folder is the app folder in which I have added two new folders under it.
+i. Components folder
+    - There is one subfolder within the components folder, in this case, it is the folder that has been named inventory.
+ii. Models folder
+    - A file named inventory.ts contains a hardcoded array of products.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Code Logic
 
-## Build
+1. The inventory data under the models folder is imported to app.component file. This is saved under the inventory variable and passed to the inventory component via the products variable.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. In the inventory.component.html file, the products data received from Step 1 was used to populate the products list table.
 
-## Running unit tests
+3. An "Add" Button was added to every product items. This product has a function called addItemToCart which is tied to the onclick button event. The addItemToCart function receive two arguments, one being the product's name and the other one being the product's image url.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Onclick, this will trigger the addItemToCart function in the inventory component and emit an onAddItem event.
 
-## Running end-to-end tests
+5. Once the onAddItem event is triggered, the populateCart function in the app component will be triggered. This will then save the items that was added to a dictionary that has been named shoppingCart.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+6. The shoppingCart dictionary was then used to populate the shopping cart list in the app component.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+7. In the app component, if the remove button is clicked, this will then trigger the removeItemFromCart function in the app component to perform an update on the shopping cart list.
