@@ -4,6 +4,9 @@
 
 This is my attempt of building a simple shopping cart using Angular.
 
+## Demo Link
+[Bikes Barn](https://kjy93.github.io/Bikes_Barn/index.html)
+
 ## Folder Description
 
 The main folder is the app folder in which I have added two new folders under it.
