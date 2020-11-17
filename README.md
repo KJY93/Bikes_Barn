@@ -10,10 +10,10 @@ This is my attempt of building a simple shopping cart using Angular.
 ## Folder Description
 
 The main folder is the app folder in which I have added two new folders under it.
-i. Components folder
-    - There is one subfolder within the components folder, in this case, it is the folder that has been named inventory.
-ii. Models folder
-    - A file named inventory.ts contains a hardcoded array of products.
+1. Components folder
+    * There is one subfolder within the components folder, in this case, it is the folder that has been named inventory.
+2.  Models folder
+    * A file named inventory.ts contains a hardcoded array of products.
 
 ## Code Logic
 
